@@ -1,5 +1,3 @@
-export default home = function (req, res) {
-  return res.end(home, {
-    html: <div>This is Home Page</div>,
-  });
+export const home = function (req, res) {
+  return res.send("this work!");
 };
