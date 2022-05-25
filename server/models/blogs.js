@@ -1,17 +1,16 @@
-import mongoose, { Schema } from "mongoose";
-
+import mongoose from "mongoose";
 //create schema for blog
-const blogSchema = new Schema({
+const blogSchema = new mongoose.Schema({
   title: {
-    type: string,
+    type: String,
     required: true,
   },
   body: {
-    type: string,
+    type: String,
     required: true,
   },
   author: {
-    type: string,
+    type: String,
     required: true,
   },
   likeCount: {
@@ -19,10 +18,10 @@ const blogSchema = new Schema({
     default: 0,
   },
   createAt: {
-    type: date,
+    type: Date,
     default: new Date(),
   },
 });
 //turning schema into model
-const Blog = new mongoose.Schema("Blog", blogSchema);
+const Blog = mongoose.model("Blog", blogSchema);
 export default Blog;
