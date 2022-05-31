@@ -5,46 +5,46 @@ class BlogPage extends React.Component {
     super();
     this.state = [
       {
-        title: "How to Escape world with a good Trip",
-        Author: "Anand Raghuvanshi",
-        like: 1122,
-        dislike: 4,
-        time: "29 May, 2022",
-        body: "So, as we all are born in this, adventure circle of 7 Hell, i.e is our life. Travelling can be proved as experincing havean.",
-        img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/thumb-image_647_060515020243.jpg?size=770:433",
-      },
-      {
-        title: "How to Escape world with a good Trip",
-        Author: "Anand Raghuvanshi",
-        like: 1122,
-        dislike: 4,
-        time: "29 May, 2022",
-        body: "So, as we all are born in this, adventure circle of 7 Hell, i.e is our life. Travelling can be proved as experincing havean.",
-        img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/thumb-image_647_060515020243.jpg?size=770:433",
-      },
-      {
-        title: "How to Escape world with a good Trip",
-        Author: "Anand Raghuvanshi",
-        like: 1122,
-        dislike: 4,
-        time: "29 May, 2022",
-        body: "So, as we all are born in this, adventure circle of 7 Hell, i.e is our life. Travelling can be proved as experincing havean.",
-        img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/thumb-image_647_060515020243.jpg?size=770:433",
-      },
-      {
-        title: "How to Escape world with a good Trip",
-        Author: "Anand Raghuvanshi",
-        like: 1122,
-        dislike: 4,
-        time: "29 May, 2022",
-        body: "So, as we all are born in this, adventure circle of 7 Hell, i.e is our life. Travelling can be proved as experincing havean.",
-        img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/thumb-image_647_060515020243.jpg?size=770:433",
-      },
-      {
-        title: "How to Escape world with a good Trip",
+        title: "How to Escape world with a good Trip?",
         author: "Anand Raghuvanshi",
         like: 1122,
-        dislike: 4,
+        comments: [],
+        time: "29 May, 2022",
+        body: "So, as we all are born in this, adventure circle of 7 Hell, i.e is our life. Travelling can be proved as experincing havean.",
+        img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/thumb-image_647_060515020243.jpg?size=770:433",
+      },
+      {
+        title: "How to Escape world with a good Trip?",
+        Author: "Anand Raghuvanshi",
+        like: 1122,
+        comments: [],
+        time: "29 May, 2022",
+        body: "So, as we all are born in this, adventure circle of 7 Hell, i.e is our life. Travelling can be proved as experincing havean.",
+        img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/thumb-image_647_060515020243.jpg?size=770:433",
+      },
+      {
+        title: "How to Escape world with a good Trip?",
+        Author: "Anand Raghuvanshi",
+        like: 1122,
+        comments: [],
+        time: "29 May, 2022",
+        body: "So, as we all are born in this, adventure circle of 7 Hell, i.e is our life. Travelling can be proved as experincing havean.",
+        img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/thumb-image_647_060515020243.jpg?size=770:433",
+      },
+      {
+        title: "How to Escape world with a good Trip?",
+        Author: "Anand Raghuvanshi",
+        like: 1122,
+        comments: [],
+        time: "29 May, 2022",
+        body: "So, as we all are born in this, adventure circle of 7 Hell, i.e is our life. Travelling can be proved as experincing havean.",
+        img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/thumb-image_647_060515020243.jpg?size=770:433",
+      },
+      {
+        title: "How to Escape world with a good Trip?",
+        author: "Anand Raghuvanshi",
+        like: 1122,
+        comments: [],
         time: "29 May, 2022",
         body: "So, as we all are born in this, adventure circle of 7 Hell, i.e is our life. Travelling can be proved as experincing havean.",
         img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201506/thumb-image_647_060515020243.jpg?size=770:433",
@@ -55,8 +55,8 @@ class BlogPage extends React.Component {
     console.log("hello inside blogpage");
     return (
       <div className="blog-page">
-        {this.state.map((blogData) => {
-          return <Blog data={blogData} />;
+        {this.state.map((blogData, index) => {
+          return <Blog data={blogData} key={index} />;
         })}
       </div>
     );

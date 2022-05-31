@@ -6,22 +6,30 @@ class Blog extends React.Component {
     console.log("data", data);
     return (
       <div className="Blog">
-        <div className="Main-heading">{data.title} </div>
-        <div className="Header">
+        <div className="blog-main-heading">{data.title} </div>
+        <div className="Blog-Details">
+          By <span className="author-name">{data.author}</span>
+          <span className="Creation-time"> {data.time}</span>
+        </div>
+        <div className="blog-header">
           <img src={data.img} alt="blog-img" />
-          <div className="Blog-Details">
-            By <span className="author-name">{data.author}</span>
-            <span className="Creation-time">{data.time}</span>
-          </div>
         </div>
         <div className="blog-body">{data.body}</div>
         <div className="Blog-action-icons">
           <div className="like-btn">
-            <img src="" alt="like-btn" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/126/126473.png"
+              alt="like-btn"
+              width="12px"
+            />
             <span>{data.like}</span>
           </div>
           <div className="dislike-btn">
-            <img src="" alt="dislike-btn" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/126/126504.png"
+              width="12px"
+              alt="dislike-btn"
+            />
             <span>{data.dislike}</span>
           </div>
         </div>

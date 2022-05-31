@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
 }
 
 code {
@@ -44,4 +45,57 @@ code {
 .Navbar .logo {
   border-radius: 50%;
   margin-right: 20px;
+}
+/************** blog***************/
+.blog-page {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.Blog {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+}
+.blog-main-heading {
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+.Blog-Details {
+  font-size: 0.6rem;
+  margin: 10px;
+  margin-top: 0px;
+  color: grey;
+}
+.author-name {
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+}
+.blog-header {
+  width: 80%;
+  margin-left: auto;
+}
+.blog-header img {
+  width: inherit;
+}
+.blog-body {
+  font-size: 0.8rem;
+  margin: 10px;
+  color: rgb(46, 45, 45);
+}
+.Blog-action-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid lightblue;
+  padding: 3px;
+}
+.Blog-action-icons span {
+  font-size: 0.7rem;
+  margin-left: 3px;
 }
