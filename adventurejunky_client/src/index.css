@@ -64,6 +64,38 @@ code {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 10px;
   margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.options img {
+  width: 12px;
+  cursor: pointer;
+  margin: 3px;
+}
+.options img:hover {
+  border: 1px solid rgb(215, 193, 177);
+  background-color: bisque;
+  border-radius: 50%;
+}
+.optionList {
+  display: none;
+  position: absolute;
+}
+
+.optionList ul {
+  position: relative;
+  margin-left: -30px;
+  list-style: none;
+  width: 60px;
+  height: 100px;
+  font-size: 0.7rem;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.optionList ul li {
+  display: flex;
 }
 .Blog-Details {
   font-size: 0.6rem;
@@ -71,6 +103,7 @@ code {
   margin-top: 0px;
   color: grey;
 }
+
 .author-name {
   text-decoration: underline;
   font-weight: bold;
@@ -93,9 +126,22 @@ code {
   display: flex;
   justify-content: space-evenly;
   border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
   padding: 3px;
 }
 .Blog-action-icons span {
   font-size: 0.7rem;
   margin-left: 3px;
+}
+.comment {
+  background-color: rgb(202, 206, 209);
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.comment-user {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.comment-body {
+  font-size: 0.7rem;
 }
