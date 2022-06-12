@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createStore } from "redux";
 
-import "./index.css";
+import "./styles/index.css";
 import App from "./components/App";
-import { AddBlogs } from "./reducers";
+import { BlogReducer } from "./reducers";
 
-const store = createStore(AddBlogs);
+const store = createStore(BlogReducer);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

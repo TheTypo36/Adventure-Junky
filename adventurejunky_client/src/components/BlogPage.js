@@ -1,4 +1,5 @@
 import React from "react";
+import { removeBlog } from "../actions";
 import Blog from "./Blog";
 const BlogPage = (props) => {
   const { blogs } = props;
@@ -7,9 +8,7 @@ const BlogPage = (props) => {
     console.log("inside deleting ", id);
 
     const newBlogs = blogs.filter((item) => item.blogId !== id);
-    this.setState({
-      blogs: newBlogs,
-    });
+    props.dispatch(removeBlog(newBlogs));
   };
   return (
     <div className="blog-page">

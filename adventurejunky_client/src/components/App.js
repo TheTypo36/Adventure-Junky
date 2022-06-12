@@ -1,8 +1,12 @@
+//package import
 import React from "react";
+
+//file imports
 import Navbar from "./Navbar";
-import { AddBlogs } from "../reducers";
 import BlogPage from "./BlogPage";
 import blogs from "../data";
+import { addBlogs } from "../actions";
+
 class App extends React.Component {
   componentDidMount() {
     const { store } = this.props;
@@ -11,17 +15,14 @@ class App extends React.Component {
       console.log("updated");
       this.forceUpdate();
     });
-    store.dispatch({
-      type: "ADD_BLOGS",
-      blogs: blogs,
-    });
+    store.dispatch(addBlogs(blogs));
   }
   render() {
     const blogs = this.props.store.getState().blogs;
     return (
       <React.Fragment>
         <Navbar />
-        <BlogPage blogs={blogs} />
+        <BlogPage blogs={blogs} dispatch={this.props.store.dispatch} />
       </React.Fragment>
     );
   }

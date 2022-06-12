@@ -19,9 +19,6 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() =>
-    app.listen(PORT, () =>
-      console.log(`server is running on the port: ${PORT}`)
-    )
-  )
+  .then(() => console.log("data base is connected"))
   .catch((error) => console.log(error.message));
+app.listen(PORT, () => console.log(`server is running on the port: ${PORT}`));
